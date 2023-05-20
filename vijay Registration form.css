@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-size: cover;
+    height: 120vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    background-size: cover;
+    height: 110vh;
+    padding: 20px;
+}
+
+.form-heading {
+    font-family: "Roboto";
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.bottom-container {
+    padding-top: 30px;
+    background-color: #d46ea8;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    align-self: center;
+}
+
+.button {
+    align-self: center;
+
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mb-3 {
+    padding-top: 10px;
+}
+
+let display_name=document.getElementById("display_name");
+let display_CollegeName=document.getElementById("display_CollegeName");
+let display_Gender=document.getElementById("display_Gender") let display_Email=document.getElementById("display_Email");
+let display_PhoneNo=document.getElementById("display_PhoneNo");
+let display_CurrentCourse=document.getElementById("display_CurrentCourse");
+let display_skill=document.getElementById("display_skill");
+
+function showDetails() {
+    var nameE1=document.getElementById("name").value;
+    var CollegeNameE1=document.getElementById("CollegeName").value;
+    var GenderE1=document.getElementById("Gender").value;
+    var EmailE1=document.getElementById("Email").value;
+    var PhoneNoE1=document.getElementById("PhoneNo").value;
+    var CurrentCourseE1=document.getElementById("CurrentCourse").value;
+    var skillE1=document.getElementById("skill").value;
+    display_name.innerHTML=nameE1;
+    display_CollegeName.innerHTML=CollegeNameE1;
+    display_Gender.innerHTML=GenderE1;
+    display_Email.innerHTML=EmailE1;
+    display_PhoneNo.innerHTML=PhoneNoE1;
+    display_CurrentCourse.innerHTML=CurrentCourseE1;
+    display_skill.innerHTML=skillE1;
+}
